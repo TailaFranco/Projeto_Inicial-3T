@@ -51,6 +51,9 @@ namespace school_management.Controllers
                     //Armazena na Claim o tipo de usuário que foi autenticado
                     new Claim("role", usuarioBuscado.IdTipoUsuario.ToString()),
 
+                    //Armazena nome
+                    new Claim("nome", usuarioBuscado.Nome.ToString()),
+
                 };
 
                 //Define a chave de acesso ao token

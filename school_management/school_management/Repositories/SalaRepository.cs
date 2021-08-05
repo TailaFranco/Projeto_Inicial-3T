@@ -44,6 +44,8 @@ namespace school_management.Repositories
         public void Deletar(int id)
         {
             ctx.Salas.Remove(BuscarPorId(id));
+
+            ctx.SaveChanges();
         }
 
         public List<Sala> Listar()

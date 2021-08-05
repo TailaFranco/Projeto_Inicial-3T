@@ -1,0 +1,411 @@
+{
+	"info": {
+		"_postman_id": "4cd51403-debf-4536-88da-917101889159",
+		"name": "School-Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Listar usuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuario/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuario",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTipoUsuario\": 2,\r\n    \"email\": \"leandro@gmail.com\",\r\n    \"senha\": \"le124\",\r\n    \"nome\": \"Leandro\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Usuario/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Usuario",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Equipamentos",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Equipamento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Equipamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Equipamento/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Equipamento",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idTipoEquipamento\": 2,\r\n    \"idAtivo\": 1,\r\n    \"idSala\": 1,\r\n    \"marca\": \"Razer\",\r\n    \"numeroSerie\": \"654312345\",\r\n    \"descricao\": \"Teclado Razer BlackWidow\",\r\n    \"idUsuario\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Equipamento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Equipamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descricao\": \"Teclado Razer Black Widow\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Equipamento/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Equipamento",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Equipamento/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Equipamento",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Salas",
+			"item": [
+				{
+					"name": "Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Sala",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Sala"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Sala/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Sala",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Sala de aula 2\",\r\n    \"metragem\": \"10,00m x 6,00m\",\r\n    \"andar\": 5,\r\n    \"idUsuario\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Sala",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Sala"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"metragem\": \"15,00m x 8,00m\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Sala/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Sala",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Sala/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Sala",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"adm@gmail.com\",\r\n    \"senha\" : \"adm123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
