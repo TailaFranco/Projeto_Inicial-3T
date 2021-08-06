@@ -10,6 +10,7 @@ namespace school_management.Interfaces
     {
         List<Sala> Listar();
         Sala BuscarPorId(int id);
+        Sala BuscarPorIdUsuario(int id);
         void Cadastrar(Sala novaSala);
         void Deletar(int id);
         void Atualizar(Sala salaAtualizada, int id);

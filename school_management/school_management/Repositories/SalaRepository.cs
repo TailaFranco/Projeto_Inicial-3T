@@ -35,6 +35,11 @@ namespace school_management.Repositories
             return ctx.Salas.FirstOrDefault(s => s.IdSala == id);
         }
 
+        public Sala BuscarPorIdUsuario(int id)
+        {
+            return ctx.Salas.FirstOrDefault(s => s.IdUsuario == id);
+        }
+
         public void Cadastrar(Sala novaSala)
         {
             ctx.Salas.Add(novaSala);

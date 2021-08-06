@@ -10,6 +10,7 @@ namespace school_management.Interfaces
     {
         List<Equipamento> Listar();
         Equipamento BuscarId(int id);
+        Equipamento BuscarIdUsuario(int id);
         void Cadastrar(Equipamento novoEquipamento);
         void Deletar(int id);
         void Atualizar(Equipamento equipamento, int id);

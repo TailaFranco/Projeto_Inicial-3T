@@ -50,6 +50,20 @@ namespace school_management.Controllers
             }
         }
 
+        [HttpGet("User/{id}")]
+        public IActionResult BuscarIdUsuario(int id)
+        {
+            try
+            {
+                return Ok(_sala.BuscarPorIdUsuario(id));
+            }
+            catch (Exception erro)
+            {
+
+                return BadRequest(erro);
+            }
+        }
+
         [HttpPost]
         public IActionResult Cadastrar(Sala novaSala)
         {
