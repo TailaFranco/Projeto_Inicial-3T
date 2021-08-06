@@ -74,9 +74,9 @@ namespace school_management
             return ctx.Equipamentos.FirstOrDefault(e => e.IdEquipamento == id);
         }
 
-        public Equipamento BuscarIdUsuario(int id)
+        public List<Equipamento> BuscarIdUsuario(int id)
         {
-            return ctx.Equipamentos.FirstOrDefault(e => e.IdUsuario == id);
+            return ctx.Equipamentos.Where(e => e.IdUsuario == id).ToList();
         }
     }
 }

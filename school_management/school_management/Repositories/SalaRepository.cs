@@ -35,9 +35,9 @@ namespace school_management.Repositories
             return ctx.Salas.FirstOrDefault(s => s.IdSala == id);
         }
 
-        public Sala BuscarPorIdUsuario(int id)
+        public List<Sala> BuscarPorIdUsuario(int id)
         {
-            return ctx.Salas.FirstOrDefault(s => s.IdUsuario == id);
+            return ctx.Salas.Where(s => s.IdUsuario == id).ToList();
         }
 
         public void Cadastrar(Sala novaSala)
