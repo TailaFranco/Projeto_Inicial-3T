@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body{
+    display: flex;
+}
+
+.barra{
+    margin-top: -8px;
+    margin-left: -8px;
+    display: flex;
+    width: 320px;
+    height: 1024px;
+   background-color: #20505B;
+}
+
+.alinhar-barra{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.alinhar-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.alinhar-classes{
+    display: flex;
+    justify-content: center;
+}
+
+.alinhar-equipamentos{
+    display: flex;
+    justify-content: center;
+}
+
+.alinhar-sair{
+    display: flex;
+    justify-content: center;
+    margin-top: 680px;
+}
+
+.classe{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+.cadastro-classe{
+    width: 100%;
+    background-color: rgba(31, 76, 87, 0.8) ;
+    margin-top: -10px;
+}
+
+
+.linha-cima{
+    display: flex;
+    justify-content: space-around;
+}
+
+.alinhar-andar{
+    display: flex;
+    margin-left: 205px;
+    margin-top: 80px;
+}
+
+.info-classe{
+    margin-top: 65px
+}
+
+.input-classe{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: white;
+    background: transparent;
+    width: 350px;
+    height: 65px;
+}
+
+.title-input{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+hr{
+    rotate: 90;
+    width: 922px;
+    margin-top: -30px;
+}
+
+.alinhar-classes{
+    background-color: #C71414;
+    width: 310px;
+}
+
+a{
+    text-decoration :none;
+    
+}
+
+a:visited{
+    color: white;
+}
+
+.menu{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.classes{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.equipamentos{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.sair{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
