@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body{
+    display: flex;
+}
+
+/*BARRA DE MENU*/
+.barra{
+    margin-top: -8px;
+    margin-left: -8px;
+    display: flex;
+    width: 320px;
+    height: 1024px;
+   background-color: #20505B;
+}
+
+.alinhar-barra{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.alinhar-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.alinhar-classes{
+    display: flex;
+    justify-content: center;
+}
+
+.alinhar-equipamentos{
+    display: flex;
+    justify-content: center;
+}
+
+.alinhar-sair{
+    display: flex;
+    justify-content: center;
+    margin-top: 680px;
+}
+
+
+.alinhar-equipamentos{
+    background-color: #C71414;
+    width: 310px;
+}
+
+a{
+    text-decoration :none;
+    
+}
+
+a:visited{
+    color: white;
+}
+
+.menu{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.classes{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.equipamentos{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.sair{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+/*CADASTRAR EQUIPAMENTOS*/
+
+.info-equipamento{
+    margin-top: 65px
+}
+
+.input-equipamento{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: white;
+    background: transparent;
+    width: 350px;
+    height: 65px;
+}
+
+.input-descricao{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: white;
+    width: 350px;
+    height: 170px;
+}
+
+.cadastro-equipamento{
+    width: 1550px;
+    background-color: rgba(31, 76, 87, 0.8) ;
+    margin-top: -10px;
+}
+
+
+.title-input{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+.linha-cima{
+    display: flex;
+    justify-content: space-around;
+}
+
+.linha-baixo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.alinhar-descricao{
+    display: flex;
+    margin-top: 80px;
+}
+
+hr{
+    rotate: 90;
+    width: 922px;
+    margin-top: -30px;
+}
+
+.alinhar-equipamentos{
+    background-color: #C71414;
+    width: 310px;
+}
+
+.equipamento{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.cadastrar-equipamento{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-select{
+    width: 200px;
+    height: 40px;
+}
+
+.coluna-select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 170px;
+}
+
