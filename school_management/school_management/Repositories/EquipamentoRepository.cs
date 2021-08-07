@@ -1,4 +1,5 @@
-﻿using school_management.Contexts;
+﻿using Microsoft.EntityFrameworkCore;
+using school_management.Contexts;
 using school_management.Domains;
 using school_management.Interfaces;
 using System;
@@ -76,7 +77,7 @@ namespace school_management
 
         public List<Equipamento> BuscarIdUsuario(int id)
         {
-            return ctx.Equipamentos.Where(e => e.IdUsuario == id).ToList();
+            return ctx.Equipamentos.Include(e => e.IdAtivoNavigation).Where(e => e.IdUsuario == id).ToList();
         }
     }
 }
