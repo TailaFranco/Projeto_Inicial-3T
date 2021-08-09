@@ -77,7 +77,11 @@ namespace school_management
 
         public List<Equipamento> BuscarIdUsuario(int id)
         {
-            return ctx.Equipamentos.Include(e => e.IdAtivoNavigation).Where(e => e.IdUsuario == id).ToList();
+            return ctx.Equipamentos
+                .Include(e => e.IdAtivoNavigation)
+                .Include(e => e.IdSalaNavigation)
+                .Where(e => e.IdUsuario == id)
+                .ToList();
         }
     }
 }

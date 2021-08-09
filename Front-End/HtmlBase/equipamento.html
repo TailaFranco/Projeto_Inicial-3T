@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>menu</title>
+</head>
+    <section style="display: flex; flex-direction: row-;">
+        <aside class="menu-lateral">
+            <nav style="width: 100%;">
+                <ul class="menu-lat-lista">
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./classe.html">Cadastrar Classes</a></li>
+                    <li id="menu"><a href="./equipamento.html">Cadastrar Equipamento</a></li>
+                </ul>
+            </nav>
+            <div class="sair">
+                <a href="./index.html" style="border-bottom: 1px #FF3535 solid; font-size: 20px;">Sair</a>
+            </div>
+        </aside>
+        <div class="conteudo-menu">
+            <div class="alinhar-content-menu">
+                <div class="titulo-menu">
+                    <h1>Cadastrar Equipamentos</h1>
+                </div>
+                <div class="alinhar-form">
+                    <div class="content-classe">
+                        <form>
+                            <div class="alinhar-form-sup">
+                                <div class="campo">
+                                    <p>Marca</p>
+                                    <input type="text">
+                                </div>
+                                <div class="campo">
+                                    <p>N° de série</p>
+                                    <input type="number">
+                                </div>
+                            </div>
+                            <div class="alinhar-form-sup inferior">
+                                <div class="campo">
+                                    <p>Descrição</p>
+                                    <input type="text">
+                                </div>
+                                <div class="select-opt">
+                                    <div class="campo">
+                                        <p>Tipo Equipamentoo</p>
+                                        <select name="Selecionar">
+                                            <option value="1">equip1</option>
+                                            <option value="2">equip2</option>
+                                            <option value="3">equip3</option>
+                                        </select>
+                                    </div>
+                                    <div class="campo">
+                                        <p>Atividade</p>
+                                        <select name="Selecionar">
+                                            <option value="1">Ativo</option>
+                                            <option value="2">Inativo</option>
+                                        </select>
+                                    </div>
+                                    <div class="campo">
+                                        <p>Sala</p>
+                                        <select name="Selecionar">
+                                            <option value="1">sala1</option>
+                                            <option value="2">sala2</option>
+                                            <option value="3">sala3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alinhar-botao">
+                                <button type="submit">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

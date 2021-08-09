@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #20505B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alinhar-cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 293px;
+}
+.logo p{
+    font-family: 'Sail', cursive;
+    font-size: 40px;
+}
+.p1{
+    color: #FF3535;
+    margin-bottom: -15px;
+}
+.p2
+{
+    color: #fff;
+}
+.ops-cabecalho{
+    width: 386px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 90px;
+}
+.menu li:hover{
+    transition: 0.3s;
+    background-color: #C71414;
+}
+.menu a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}
+
+/* banner */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3px;
+    width: 100%;
+    height: 851px;
+    background-image: url('../images/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.alinhar-banner{
+    width: 1099px;
+    height: 455px;
+    display: flex;
+    justify-content: space-between;
+}
+.alinhar-cadastrese{
+    width: 470px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.cadastrese{
+    width: 518px;
+    height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.cadastrese h2{
+    font-family: Oswald;
+    color: white;
+    font-size: 62px;
+}
+.botao{
+    width: 324px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 31px;
+    background-color:#C71414;
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px
+}
+.botao:hover{
+    box-shadow:
+            25px 25px rgb(46, 44, 44);
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: 0.5s;
+}
+.logo2 img{
+    width: 406px;
+    height: 341px;
+}
+.logo2 img:hover{
+    box-shadow:
+            25px 25px rgb(46, 44, 44);
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: 0.5s;
+}
+
+/* sobre nos */
+
+#sobrenos{
+    width: 100%;
+    height: 702px;
+    display: flex;
+    align-items: center;
+    padding-top: 33px;
+    flex-direction: column;
+    margin-bottom: 57px;
+}
+.alinhar-sobrenos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 33px;
+}
+.alinhar-sobrenos h2{
+    font-family: 'Bebas Neue', cursive;
+    color: #20505B;
+    font-size: 82px;
+}
+.sobrenos-txt{
+    width: 100%;
+    height: 100%;
+    background-color: #20505B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.alinhar-txt-img{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 581px;
+    width: 1262px;
+}
+
+.alinhar-txtsn{
+    width: 551px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 36px;
+}
+
+/* esperando */
+
+.esperando{
+    width: 100%;
+    height: 468px;
+    display: flex;
+    justify-content: center;
+}
+.alinhar-esperando{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.alinhar-esperando h2{
+    font-family: 'Bebas Neue', cursive;
+    color: #20505B;
+    font-size: 82px;
+}
+.txt-esperando{
+    margin-top: 45px;
+    width: 1168px;
+    height: 348px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+    border-top : 4px solid #FF3535;
+    border-bottom : 4px solid #FF3535;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 50px;
+    height: 158px;
+    width: 100%;
+    background-color: #20505B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alinhar-footer{
+    height: 158px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    width: 190px;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.lista-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.lista-footer li{
+    list-style: circle;
+    margin-bottom: 5px;
+}
+.logo3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 690px;
+}
+.logo3 p{
+    margin-top: 15px;
+    color: white;
+    font-size: 15px
+}
+
+
+
+
+
+
+
+
+
+
+/* login */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: #1F4C57;
+}
+.propaganda{
+    height: 937px;
+    background-image: url('../images/FundoLogin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-propaganda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    width: 80%;
+    flex-direction: column;
+}
+.sec-login{
+    width: 1120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alinhar-login{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.alinhar-login h2{
+    color: white;
+    font-size: 62px;
+    font-family: 'Bebas Neue', cursive;
+}
+.alinhar-form{
+    display: flex;
+    flex-direction: column;
+    height: 673px;
+    justify-content: space-around;
+    align-items: center;
+}
+.campo{
+    width: 588.29px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.campo p{
+    color: #fff;
+    font-size: 20px;
+}
+.campo input{
+    width: 100%;
+    height: 30px;
+    background-color: unset;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 3px #fff solid;
+    font-size: 17px;
+}
+.alinhar-form button{
+    width: 270px;
+    height: 94px;
+    background-color: #FF3535;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-family: Oswald;
+    box-shadow:
+            5px 5px rgb(46, 44, 44);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.alinhar-form button:hover{
+    cursor: pointer;
+}
+.alinhar-from2{
+    height: 550px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* menu */
+
+
+
+
+
+
+
+
+
+
+
+.menu-lateral{
+    width: 320px;
+    height: 937px;
+    background-color: #20505B;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-lat-lista{
+    width: 100%;
+}
+.menu-lat-lista li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+.menu-lat-lista a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+}
+.menu-lat-lista a:hover{
+    background-color: #C71414;
+    transition: 0.5s;
+}
+.sair{
+    margin-top: 570px;
+}
+.conteudo-menu{
+    width: 1600px;
+    height: 937px;
+    background: #20505BCC;
+    display: flex;
+    justify-content: center;
+}
+.alinhar-content-menu{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-menu{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px white solid;
+    color: white; 
+    font-size: 30px;
+}
+.alinhar-info{
+    margin-top: 35px;
+    width: 100%;
+    height: 729px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info-salas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.quadro{
+    background-color: #20505B;
+    width: 100%;
+    height: 341px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+.titulo-equipamentos{
+    width: 218px;
+}
+.titulos-quad{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 56px;
+    margin-bottom: 10px;
+}
+.titulos{
+    display: flex;
+    width: 82%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.conteudo{
+    width: 100%;
+    height: 284px;
+}
+.linha{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.infolinha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    width: 310px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    border-right: 1px white solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.infolinhaequipamento{
+    width: 240px;
+    font-size: 15px;
+    height: auto;
+    min-height: 60px;
+}
+.titulosEquip{
+    padding: 5px;
+}
+.contentSalas{
+    width: 400px;
+}
+.titulosalas{
+    width: 75%;
+}
+.botaoExcluir{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+.botaoExcluir:hover{
+    cursor: pointer;
+}
+.alinharBotaoEditar{
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+/* classes */
+
+
+
+
+
+
+
+
+
+
+
+.content-classe{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    height: 600px;
+    margin-top: 130px;
+}
+.alinhar-botao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.alinhar-botao button{
+    width: 200px;
+    height: 70px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Equipamentos */
+
+
+
+
+
+
+
+
+
+
+
+
+.alinhar-form-sup{
+    width: 1400px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.select-opt{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 100px;
+}
+.campo select{
+    width: 249px;
+    height: 35px;
+    font-size: 15px;
+    margin-bottom: -30px;
+}
+.inferior{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.div-Flex{
+    display: flex;
+}
