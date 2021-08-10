@@ -38,13 +38,17 @@ export default function Menu(){
     function excluirSala(salas){
 
         axios.delete('http://localhost:5000/api/Sala/'+salas.idSala)
+        
+        .then(resposta => {
+            if (resposta.status === 204) {
+                console.log('excluido')
+                .then(window.location.reload())
+            }
+        })
 
-        .then(console.log('Excluido'))
-        
-        .catch(erro => console.log(erro))
-        
+        .catch(alert('Verifique se não há equipamentos cadastrados nessa sala!'))
+ 
         .then(window.location.reload())
-                
     }
 
     function excluirEquip(Equip){
@@ -71,6 +75,7 @@ export default function Menu(){
                         <h1>Menu</h1>
                     </div>
                     <div className="alinhar-info">
+                            <h2 className="titulo-salas">Salas</h2>
                         <div className="info-salas">
                             <div className="quadro">
                                 <div className="titulos-quad">
@@ -107,6 +112,7 @@ export default function Menu(){
                                 </div>
                             </div>
                         </div>
+                        <h2 className="titulo-salas titulo-equip">Equipamento</h2>
                         <div className="info-salas">
                             <div className="quadro">
                                 <div className="titulos-quad">
