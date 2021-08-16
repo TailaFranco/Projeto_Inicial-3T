@@ -80,8 +80,10 @@ header{
     align-items: center;
     width: 150px;
     height: 90px;
+    transition: all ease 0.3s;
 }
 .menu li:hover{
+    transform: scale(32);
     transition: 0.3s;
     background-color: #C71414;
 }
@@ -145,7 +147,8 @@ header{
     color: white;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
-    border-radius: 10px
+    border-radius: 10px;
+    transition: all ease 0.5s;
 }
 .botao:hover{
     box-shadow:
@@ -157,6 +160,7 @@ header{
 .logo2 img{
     width: 406px;
     height: 341px;
+    transition: all ease 0.5s;
 }
 .logo2 img:hover{
     box-shadow:
